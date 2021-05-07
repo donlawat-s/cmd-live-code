@@ -1,12 +1,19 @@
-# cmd-live-code
-Question for live code interview
+# CODEMONDAY-live-code-interview
+
+Questions for live code interview
 
 ### Question 1
 #### Input
-Array of number `1..2`
+Array of number `1...2`
+
+> `To Copy to paste in codeshare.io for the candidate`
 ```js
 const numbers = [1, 2, 3, 4, 5, 6, 7]
+
+/* ให้ return ค่านี้ >>> [4, 8, 12]
+(เอาเลขคู่ * 2) */
 ```
+
 #### Output
 Even number times two \
 กรองผลลัพธ์เหลือแต่เลขคู่ แล้วคูณด้วย 2
@@ -14,34 +21,51 @@ Even number times two \
 [4, 8, 12]
 ```
 
+------
+
 ### Question 2
 #### Input
 Collection of user (array of user object)
+
+> `To Copy to paste in codeshare.io for the candidate`
 ```js
-const users = [
+const employees = [
   {
-    name: 'John',
-    age: 20,
-    gender: 'male'
+    name: 'Win',
+    age: 25
   },
   {
-    name: 'Jane',
-    age: 23,
-    gender: 'female'
+    name: 'Ton',
+    age: 25
   },
   {
-    name: 'Adam',
-    age: 40,
-    gender: 'male'
+    name: 'Boat',
+    age: 26
+  },
+  {
+    name: 'Oak',
+    age: 28
   }
 ]
+
+/* TODO
+  1. Transform employees to ['Win', 'Ton', 'Boat', 'Oak']
+  2. Find max age and print. Expected result [{ name: 'Oak', age: 28 }]
+  3. Transform employee to [{ 25: ['Win', 'Ton'], 26: ['Boat'], 28: ['Oak']}]
+  4. อยากได้ฟังก์ชันที่เรียกใช้โดยเรียก getAgeByName('Boat') แล้วได้ 26 กลับมา
+*/
 ```
+
 #### Output
 Write function that return age of collection specified
 ```
-getAgeByName('Jane')
-// 23
+1. ['Win', 'Ton', 'Boat', 'Oak']
+2. [{ name: 'Oak', age: 28 }]
+3. [{ 25: ['Win', 'Ton'], 26: ['Boat'], 28: ['Oak']}]
+4. getAgeByName('Boat') >>> 26
 ```
+
+------
 
 ### Question 5
 
