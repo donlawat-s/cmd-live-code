@@ -25,11 +25,11 @@ Even number times two \
 
 ### Question 2
 #### Input
-Collection of user (array of user object)
+Collection of users (array of user object)
 
 > `To Copy to paste in codeshare.io for the candidate`
 ```js
-const employees = [
+const users = [
   {
     name: 'Win',
     age: 25
